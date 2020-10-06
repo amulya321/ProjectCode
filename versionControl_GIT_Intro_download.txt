@@ -1,0 +1,78 @@
+uploading different functionalities code into a remote server (version controling system)
+accepts the code + integrates the code+ creates one project
+we can jump to any version of code 
+keep a track of who is making what kind of changes
+
+-----------------
+Notes:
+
+Version Controlling:
+
+This is the process of maintaining different versions of the code.All the team members upload the code into the remote 
+version controlling server where the code get integrated into a single project.
+Next time when the team members download the code they will be able to access the code created by the entire team.
+
+Version controlling systems also preserve older and latest versions of the code
+so that the team members can switch between any version based on their requirement
+
+Version controlling systems also keep a track of who is making what kind of changes.
+
+There are two types of version controlling
+1. Centralised version controlling
+2. Distributed Version Controlling
+
+Centralised version controlling:
+------------------------------------
+In CVC we have a remote server where all the code is uploaded and version controlling
+happens only that remote server Eg.SVN ( subversion)
+
+Distributed Version Controlling:
+--------------------------------
+In DVC a local repository is installed on every developers machine where
+initially the code is uploaded by the developer.Here version controlling happens only at the level of individual developer
+Later the code will be uploaded into a remote server where version controlling happens at the level of the entire team
+
+In DVC we can also create bare repositories that is repositories at individual team level or sub team level or 
+a main repository at the level of the entire project
+
+==============================================================================
+Installing GIT on Windows:
+-------------------------
+1)Download from google
+2)Install it
+3)Once git installed we get an application called gitbash
+ This is the command promt of git where we can fire git commands
+
+
+Installing git on Ununtu Linux machines:
+---------------------------------------
+1)open terminal
+2)update the apt repository
+sudo apt-get update
+3) Install git
+sudo apt-get install -y git
+
+Install git on Redhar,Centos linux machines:
+-------------------------------------------
+
+1)Open terminal
+2)Update the yum repository and install git
+yum -y install git
+
+setting username and email globally for all users
+-----------------------------------------
+git config --global user.name "amulya gurijala"
+git config --global user.email "amulyareddy220@gmail.com"
+
+To see the list of global configurations
+git config --global --list
+
+
+
+
+
+
+
+
+
+

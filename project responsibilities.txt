@@ -1,0 +1,33 @@
+Intro:
+
+I am currently working for xyz company for ABC client.This is an application related to xyz/consumer facing domain.
+The projects for which am working is a Java based application.And our devs are using GIT for version controlling.
+One of my responsibility as a devops engineer is to perform Continuous Intergartion ,for this we are using Jenkins.
+I have Integrated Jenkins with the GIT version controlling System in such a way that when ever developer modifies the code
+jenkins recives a notification.I hve configured webhooks for this purpose.Jenkins pulls that code and triggers the build process.
+This we are performing with the help of Maven plugin.I have configured jenkins to deploy this artifacts into the test servers.
+These servers are running on tomcat.we have an automation testing team who created automation test programs using selenium and Jmeter.
+Jenkins executes these automation test programs and checks If the application is working correctly.Later Jenkins will deploy this application 
+into the staging servers where it executes certain UAT testcases created by the testers.If the UAT testing passes Jenkins takes approvals from
+the delivery team and deploys it into the production servers.To implement this flow of CI/CD we are using Pipeline scripts created through groovy.
+Since we need to run multiple jenkins jobs sometimes parallelly to reduce the load on the jenkins server ,I have created slave machines and 
+jenkins distributes its load to slave machines.Our sprint duration is generally 3-4 weeks and we configure Jenkins for that.We also have sub sprints
+once in every 3-4 days where we have minor releases.So we run these Jenkins jobs for the minor releases also,since our devs upload multiple functionalities
+code on multiple branches of GIT.I have configured multi branch pipeline jobs in Jenkins.
+   Since the last 2 years we started implementing Docker.As I told you earlier our application is Java based.The DB's are running on MySQL .And for Application
+ servers we are using TomCat.This complete environment we have set up via Docker containers.For this we are using Docker Compose.Another important project 
+that we have done on docker was creating the required testing environment using Docker.Our Automation testing team estimated that this Application has 
+to be tested on multiple browser and OS combinations.They estimated approximately 800+ browser and OS combinations,on which they wanted to run the
+automation test scripts.Since creating such a huge infra structure of 800+ browser and OS combination is very difficult.Our organization initially depended on
+a cloud service provider called Sauce Labs.But as it was very expensive, I did a little POC and created this complete environment of 800+ browser and OS combinations
+using Docker containers.
+ I am also involved in creating customized Docker Images based on organizations requirements and these Images I upload into the Docker private Registry that I have
+set up.We are also using Docker at the level of production where we are using Kubernaties.Where we handling all the real time scenarios like Load balancing,high availability,
+disaster recovery,scaling etc.For some reason our management has decided to migrate from kubernaties to Swarm.Due to this reason I have working knowledge of
+both Kubernaties and Swarm.
+  We have our data center in California where our Applications are running on almost 1200 servers.Configuring these servers remotely is another day to day activity that we
+performed.For this we are using Anisble.I create play books and Roles in Anisble for remotely configuring software applications on these servers.I have remotely configured
+applications like Tomcat,httpd,ftd,NFS etc.Recently I have started working on Integrating Docker with Ansible,so that we can perform Docker containerization on any number of 
+remote servers.We also used Python scripts for creating customized programs for handling day to day activities on Jenkins and Docker.
+
+
